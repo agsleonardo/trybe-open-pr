@@ -1,21 +1,30 @@
-#!/bin/sh
-#echo "what is your name?"
-#read name
-#echo "How do you do, $name?"
-#read remark
-#echo "I am $remark too!"
-#github_url=`git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#https://#' -e 's@com:@com/@' -e 's%\.git$%%' | awk '/github/'`;
-#branch_name=`git symbolic-ref HEAD | cut -d"/" -f 3,4`;
-#pr_url=$github_url"/compare/main..."$branch_name
-#chrome $pr_url;
-echo -e "\033[0;32m* * * * * * * * * * * * * * * * * *\033[0m\n"
-echo    "Boas-vindas ao script de "
-echo -e "abertura de Pull Request"
-echo -e "para projetos \n"
-echo -e "\033[0;32m* * * * * * * * * * * * * * * * * *\033[0m\n"
+#!/usr/bin/env bash
+echo "Informe o caminho SSH do repositório do projeto:"
+read URL
+echo -e "\n"
 
-if [[ $GITHUB_TOKEN == "" ]] ; then
- echo "existe"
-else
- echo "nao existe"
+if [[ "$NAME_USER" == "" ]] ; then
+  echo "Digite o seu Nome e Sobrenome:"
+  read NAME_USER
+  echo -e "\n"
+  read -p "Deseja salvar o nome para os próximos projetos (s/N)" -n 1 -r
+  echo -e "\n"
 fi
+[[ ! $REPLY =~ ^[Ss]$ ]] && echo 'NAME_USER="$NAME_USER"' >> ~/.bashrc && echo 'NAME_USER="$NAME_USER"' >> ~/.zshrc
+
+if gh auth status ; then
+  echo 'GH Autenticado!'
+else
+  echo "Digite o token de acesso do GITHUB:"
+  read GITHUB_TOKEN
+  read -p "Deseja salvar o token para os próximos projetos (s/N)" -n 1 -r
+  [[ ! $REPLY =~ ^[Ss]$ ]] && echo 'GITHUB_TOKEN="$GITHUB_TOKEN"' >> ~/.bashrc && echo 'GITHUB_TOKEN="$GITHUB_TOKEN"' >> ~/.zshrc
+fi
+
+# if [[ "$GITHUB_TOKEN" == "" ]] ; then
+# fi
+#
+#
+#A variavel de ambiente é vazia?
+#	Digite o token de acesso do GITHUB:
+#	-GITHUB_TOKEN
