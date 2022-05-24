@@ -13,3 +13,9 @@ echo    "Boas-vindas ao script de "
 echo -e "abertura de Pull Request"
 echo -e "para projetos \n"
 echo -e "\033[0;32m* * * * * * * * * * * * * * * * * *\033[0m\n"
+
+if [[ $GITHUB_TOKEN == "" ]] ; then
+ echo "existe"
+else
+ echo "nao existe"
+fi
