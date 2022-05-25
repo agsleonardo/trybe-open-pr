@@ -43,3 +43,15 @@ Execute o script
 ```bash
   bash openpr.sh
 ```
+
+## Screenshots
+
+![1](https://drive.google.com/uc?export=view&id=1rC6XmFRpnTU6mPX46D7t2LKeMBqGArLz)
+
+![2](https://drive.google.com/uc?export=view&id=1KMwy2Qr2eNbVJcQzDy5OA4U3Qmle50A0)
+
+![3](https://drive.google.com/uc?export=view&id=1Gajo9jpWLXmlzjLfkeRe2LjmXFM1yWbt)
+
+![4](https://drive.google.com/uc?export=view&id=1kaq0_y6japykWqFgwEBhymTJba3koOHC)
+
+
