@@ -2,7 +2,7 @@
 Este script foi desenvolvido com intuito de facilitar o processo de abertura de Pull Requests nos projetos para os alunos da Trybe.
 
 Basicamente, o script solicita algumas informações:
-- O caminho SSH do repositório (para fins de automação dos projetos da Trybe, o tratamento realizado leva em conta um input no padrão Trybe ex.: sd-xxx-x-project-laland). Apesar de realizar a abertura com sucesso, pode não ter o resultado esperado para outros projetos.
+- O caminho SSH do repositório (para fins de automação dos projetos da Trybe, o tratamento realizado leva em conta um input no padrão Trybe ex.: sd-xxx-x-project-lalaland). Apesar de realizar a abertura com sucesso, pode não ter o resultado esperado para outros projetos.
 - O nome e sobrenome da pessoa que está abrindo o Pull Request (ex.: Leo Oliveira)
 - E o token de acesso pessoal do Github (caso seja a primeira execução). O passo a passo para criação do token pode ser acompanhado no link  https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
