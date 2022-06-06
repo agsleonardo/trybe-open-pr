@@ -20,7 +20,7 @@ O processo de abertura é realizado via CLI proprietária do Github (gh), que o 
 
 ## Rodando localmente
 
-Crie um token de acesso pessoal do GITHUB
+Crie um token de acesso pessoal do GITHUB com todas as permissões
 
 ```bash
   https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
